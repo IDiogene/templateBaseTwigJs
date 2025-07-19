@@ -30,9 +30,10 @@ app.set('views', __dirname + '/views');
 app.use(express.static(__dirname + '/public'));
 
 const indexRouter = require('./route/index');
+const headerRouter = require('./route/header')
 
-app.use('/', indexRouter);
-
+app.use('/', headerRouter);
+app.use('/index', indexRouter)
 
 app.listen(port, () => {
   console.log(`Serveur lancé sur http://localhost:${port}`);

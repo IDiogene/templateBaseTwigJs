@@ -1,0 +1,19 @@
+header {
+    background-color: blueviolet;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    border-bottom: 4px solid black;
+}
+
+#headerPages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 90vw;
+}
