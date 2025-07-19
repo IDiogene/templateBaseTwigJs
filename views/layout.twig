@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Mon site{% endblock %}</title>
+  <link rel="stylesheet" href="/css/global.css">
+  {% block styles %}{% endblock %}
+</head>
+<body>
+  {% include "partials/header.twig" %}
+  
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  {% include "partials/footer.twig" %}
+
+  <script src="/js/global.js"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

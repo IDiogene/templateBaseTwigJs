@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ title }}</title>
-  <link rel="stylesheet" href="/css/index.css">
-</head>
-<body>
-  <h1>{{ message }}</h1>
-  <p>Ceci est rendu avec Twig.js 🎉</p>
+{% extends "layout.twig" %}
 
+{% block title %}Accueil{% endblock %}
 
+{% block styles %}
+<link rel="stylesheet" href="/css/index.css">
+{% endblock %}
 
-  <script src="/js/index.js"></script>
-</body>
-</html>
+{% block content %}
+  <h2>Page d'accueil</h2>
+  <p>Ceci est la page d’accueil du site 🚀.</p>
+{% endblock %}
+
+{% block scripts %}
+<script src="/js/index.js"></script>
+{% endblock %}
